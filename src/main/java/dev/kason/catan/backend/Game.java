@@ -13,7 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
-import java.util.Set;
 
 @SuppressWarnings("unused")
 @Slf4j
@@ -121,8 +120,17 @@ public class Game {
     }
 
     public boolean trade(Player p1, Player p2, Map<Resource, Integer> offer, Map<Resource, Integer> request) {
-        if (p1 == null || p2 == null || offer == null || request == null) {
-            log.error("Trade failed: null check failed");
+        if (p1 == null) {
+            log.error("Player 1 is null");
+            return false;
+        } else if (p2 == null) {
+            log.error("Player 2 is null");
+            return false;
+        } else if (offer == null) {
+            log.error("Offer is null");
+            return false;
+        } else if (request == null) {
+            log.error("Request is null");
             return false;
         }
         log.debug("Trade(p1={}, p2={}, offer={}, request={})", p1, p2, offer, request);
