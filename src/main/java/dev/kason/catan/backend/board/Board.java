@@ -2,7 +2,6 @@ package dev.kason.catan.backend.board;
 
 import dev.kason.catan.backend.Game;
 import dev.kason.catan.backend.player.Player;
-import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,6 +17,7 @@ import java.util.Set;
 
 @Getter
 @Setter
+@SuppressWarnings("unused")
 public class Board {
 
     private static final Set<Integer> leftMost = Set.of(0, 3, 7, 12, 16);
@@ -181,7 +181,6 @@ public class Board {
     }
 
     @Data
-    @Builder
     public static class ValueGenerationStrategy {
         public static final ValueGenerationStrategy DEFAULT = new ValueGenerationStrategy(0, false);
         private static final int[] VALUES = {

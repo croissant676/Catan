@@ -23,6 +23,7 @@ dependencies {
     implementation("com.google.guava:guava:31.1-jre")
     implementation("ch.qos.logback:logback-classic:1.2.11")
     implementation("com.fasterxml.jackson.core:jackson-databind:2.13.2.2")
+    implementation("org.slf4j:jul-to-slf4j:1.7.36")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.2")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.2")
 }
