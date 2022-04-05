@@ -19,7 +19,7 @@ public class Runner {
         ).forEach(System.out::println);
         SLF4JBridgeHandler.removeHandlersForRootLogger();
         SLF4JBridgeHandler.install();
-        log.info("Starting Catan");
+        log.info("Starting Catan ... ");
         Application.launch(JavaFXApp.class, args);
     }
 }
