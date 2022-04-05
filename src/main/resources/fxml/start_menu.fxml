@@ -5,8 +5,8 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.kason.catan.ui.StartMenu">
    <children>
-      <Button fx:id="startButton" layoutX="77.0" layoutY="293.0" mnemonicParsing="false" text="Button" />
-      <Button fx:id="continueButton" layoutX="274.0" layoutY="293.0" mnemonicParsing="false" text="Button" />
-      <Button fx:id="viewGameRulesButton" layoutX="472.0" layoutY="293.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="startButton" layoutX="121.0" layoutY="293.0" mnemonicParsing="false" text="Rules" />
+      <Button fx:id="continueButton" layoutX="281.0" layoutY="293.0" mnemonicParsing="false" text="Play" />
+      <Button fx:id="viewGameRulesButton" layoutX="435.0" layoutY="293.0" mnemonicParsing="false" text="Load" />
    </children>
 </AnchorPane>
