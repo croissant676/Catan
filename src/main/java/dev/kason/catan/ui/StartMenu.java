@@ -21,7 +21,13 @@ public class StartMenu {
     public void initialize() {
         Stage stage = JavaFXApp.getStage();
         startButton.setOnMouseClicked(event -> {
-            log.info("Test");
+            log.info("start button");
+        });
+        continueButton.setOnMouseClicked(event -> {
+            log.info("continue button");
+        });
+        viewGameRulesButton.setOnMouseClicked(event -> {
+            log.info("rules button");
         });
     }
 }
