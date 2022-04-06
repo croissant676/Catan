@@ -1,12 +1,10 @@
 package dev.kason.catan.backend.board;
 
 import dev.kason.catan.backend.player.Player;
-import lombok.Data;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
-import java.util.Arrays;
 import java.util.List;
 
 @Getter

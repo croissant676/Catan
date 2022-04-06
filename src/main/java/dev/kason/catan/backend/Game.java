@@ -43,11 +43,11 @@ public class Game {
     private static Game instance;
     private final Random random;
     private Board board;
-    private List<Player> players;
+    private final List<Player> players;
     private int diceRoll;
     private int turn;
-    private int longestRoad = 0;
-    private int largestArmy = 0;
+    private final int longestRoad = 0;
+    private final int largestArmy = 0;
 
     public Game(List<Player.Color> playerOrder, long seed) {
         if (instance != null) {
@@ -157,7 +157,7 @@ public class Game {
             log.debug("Vertex {} already has a settlement", vertex);
             return false;
         }
-        if(!board.getValidBuildingPoints().contains(vertex)) {
+        if (!board.getValidBuildingPoints().contains(vertex)) {
             log.debug("Vertex {} is not a valid building point", vertex);
             return false;
         }

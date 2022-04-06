@@ -18,11 +18,9 @@ public class Player {
     private final Color color;
     private final Map<Resource, Integer> resources;
     private final Set<Vertex> vertices = new HashSet<>();
-
+    private final Set<DevCard> devCards = new HashSet<>();
     private int victoryPoints = 0;
     private int victoryPointsWithoutDev = 0;
-    private final Set<DevCard> devCards = new HashSet<>();
-
     private int armySize = 0;
 
     public Player(Color color, int id) {
@@ -57,7 +55,7 @@ public class Player {
     }
 
     public enum Color {
-        RED, WHITE, ORANGE, BLUE;
+        RED, WHITE, ORANGE, BLUE
     }
 
 }

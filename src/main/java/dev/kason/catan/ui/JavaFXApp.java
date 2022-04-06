@@ -1,8 +1,8 @@
 package dev.kason.catan.ui;
 
+import com.google.common.io.Resources;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import lombok.Getter;
@@ -15,17 +15,12 @@ public class JavaFXApp extends Application {
     private static Stage stage;
 
     @Override
-    public void init() {
-        log.info("Initialized application `{}`", getClass().getCanonicalName());
-        GameState.setCurrent(GameState.INIT);
-    }
-
-    @Override
     public void start(Stage stage) throws Exception {
+        log.info("Starting JavaFX application, displaying menu window.");
         JavaFXApp.stage = stage;
+        Scene scene = new Scene(FXMLLoader.load(Resources.getResource("fxml/menu.fxml")));
+        stage.setScene(scene);
         stage.setTitle("Catan");
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/start_menu.fxml"));
-        stage.setScene(new Scene(loader.load()));
         stage.show();
     }
 }

@@ -1,3 +1,7 @@
-body {
-    -fx-background-color: #f5f5f5;
+.root {
+    -fx-background-color: #e3b65d;
+}
+.label {
+    -fx-text-fill: white;
+    -fx-font-family: Dubai;
 }
