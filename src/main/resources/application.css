@@ -3,5 +3,13 @@
 }
 .label {
     -fx-text-fill: white;
+    -fx-font-family: "Fira Code";
+}
+.button {
+    -fx-background-color: #e3b65d;
+    -fx-text-fill: white;
     -fx-font-family: Dubai;
+}
+.button:hover {
+    -fx-background-color: #020200;
 }

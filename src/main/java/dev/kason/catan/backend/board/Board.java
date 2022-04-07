@@ -36,12 +36,8 @@ public class Board {
     private int robber;
 
     public Board(Random random, ValueGenerationStrategy strategy) {
-        if (random == null) {
-            random = new Random();
-        }
-        if (strategy == null) {
-            strategy = ValueGenerationStrategy.DEFAULT;
-        }
+        if (random == null) random = new Random();
+        if (strategy == null) strategy = ValueGenerationStrategy.DEFAULT;
         List<Hex.Type> hexTypes = new ArrayList<>(19);
         for (Hex.Type value : Hex.Type.values()) {
             for (int count = 0; count < value.getNumber(); count++) {

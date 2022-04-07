@@ -10,11 +10,10 @@ public enum GameState {
     VIEW_RULES,
     DOWNLOAD_PDF,
     VIEW_SPECIAL_RULES,
-    SELECT_PLAYERS,
-    SELECT_MAP,
-    CUSTOM_MAP_CONF,
-    GAME_SETTINGS,
-    GAME_INIT,
+    SELECT_PLAYERS, //choose the number of players
+    SELECT_MAP, //?
+    CUSTOM_MAP_CONF, //?
+    GAME_SETTINGS, //?
     GAME_PLAY,
     GAME_FINISH,
     CONTINUE_GAME,
