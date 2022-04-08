@@ -3,6 +3,7 @@ plugins {
     application
     id("org.openjfx.javafxplugin") version "0.0.12"
     id("io.freefair.lombok") version "6.4.1"
+    kotlin("jvm") version "1.5.31"
 }
 
 group = "dev.kason"
@@ -18,6 +19,7 @@ javafx {
 }
 
 dependencies {
+    implementation(kotlin("stdlib-jdk8"))
     implementation("org.projectlombok:lombok:1.18.22")
     annotationProcessor("org.projectlombok:lombok:1.18.22")
     implementation("com.google.guava:guava:31.1-jre")

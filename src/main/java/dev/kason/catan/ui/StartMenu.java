@@ -41,6 +41,7 @@ public class StartMenu {
         log.info("Creating a new game");
         GameState.setCurrent(GameState.SELECT_PLAYERS);
         Scene scene = new Scene(FXMLLoader.load(Resources.getResource("fxml/menu.fxml")));
+        log.info("Setting scene");
         stage.setScene(scene);
     }
 
